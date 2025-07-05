@@ -6,7 +6,7 @@ export interface SharedCkEditor extends Struct.ComponentSchema {
     displayName: 'CKEditor';
   };
   attributes: {
-    test: Schema.Attribute.RichText &
+    body: Schema.Attribute.RichText &
       Schema.Attribute.CustomField<
         'plugin::ckeditor5.CKEditor',
         {

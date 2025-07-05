@@ -6,12 +6,7 @@ with pkgs;
 mkShellNoCC {
   packages = [
     nodejs
-    dnscontrol
     sops
     age
   ];
-
-  shellHook = ''
-    dnscontrol write-types -o ./dnscontrol/types-dnscontrol.d.ts
-  '';
 }
